@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/heartbackground"
+    tools:context="com.example.sungsoyeon.couplediary.LogInActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/dday"
+            android:layout_width="130dp"
+            android:layout_height="140dp"
+            android:layout_alignLeft="@+id/heartlink2"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/heartlink2"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="78dp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/calendar"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_alignBottom="@+id/dday"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="37dp"
+            android:layout_marginRight="37dp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/heartlink2"
+            android:layout_width="330dp"
+            android:layout_height="150dp"
+            android:layout_above="@+id/gallery"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/gallery"
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:layout_above="@+id/logout"
+            android:layout_alignLeft="@+id/dday"
+            android:layout_alignStart="@+id/dday"
+            android:layout_marginBottom="23dp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/couplestory"
+            android:layout_width="130dp"
+            android:layout_height="150dp"
+            android:layout_alignBottom="@+id/gallery"
+            android:layout_alignLeft="@+id/calendar"
+            android:layout_alignStart="@+id/calendar"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/btnmain"
+            android:text="LOGOUT"
+            android:textColor="#f46269"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</LinearLayout>

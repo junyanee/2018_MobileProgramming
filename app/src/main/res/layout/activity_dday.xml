@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#dcffcfcf"
+    tools:context="com.example.sungsoyeon.couplediary.Dday_Activity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="52dp"
+        android:text="오늘의 날짜는?"
+        android:textColor="#f46269"
+        android:textSize="12pt"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/today"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="30dp"
+        android:textSize="10pt"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/dateButton"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/today"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:background="@drawable/btnmain"
+        android:text="D-day 날짜 설정"
+        android:textColor="#f46269"
+        android:textSize="8pt"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/startlove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/today"
+        android:layout_alignStart="@+id/today"
+        android:layout_below="@+id/dateButton"
+        android:layout_marginTop="62dp"
+        android:text="설정된 D-day 날짜"
+        android:textColor="#f46269"
+        android:textSize="12pt"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/dday"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/startlove"
+        android:layout_alignStart="@+id/startlove"
+        android:layout_below="@+id/startlove"
+        android:layout_marginTop="26dp"
+        android:textSize="10pt"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/ddayplus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/result"
+        android:layout_alignBottom="@+id/result"
+        android:layout_alignLeft="@+id/dday"
+        android:layout_alignStart="@+id/dday"
+        android:text="오늘로부터"
+        android:textColor="#f46269"
+        android:textSize="10pt"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/dday"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="73dp"
+        android:layout_toEndOf="@+id/ddayplus"
+        android:layout_toRightOf="@+id/ddayplus"
+        android:textSize="10pt"
+        android:textStyle="bold" />
+
+
+
+</RelativeLayout>

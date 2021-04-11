@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#dcffcfcf"
+    tools:context="com.example.sungsoyeon.couplediary.CalendarActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btnmain"
+            android:text="일정 삭제"
+            android:textColor="#f46269"
+            android:textSize="8pt"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btnmain"
+            android:text="일정 추가"
+            android:textColor="#f46269"
+            android:textSize="8pt"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <DatePicker
+            android:layout_marginTop="20dp"
+            android:layout_width="358dp"
+            android:layout_height="447dp" />
+    </LinearLayout>
+
+</LinearLayout>

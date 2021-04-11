@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#dcffcfcf"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="7dp"
+                android:src="@drawable/fillheart" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:text="우리 이야기"
+                android:textSize="9pt" />
+
+            <Button
+                android:id="@+id/btnsave"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btnmain"
+                android:textColor="#f46269"
+                android:textStyle="bold"
+                android:layout_marginRight="15dp"
+                android:text="저장" />
+
+            <Button
+                android:id="@+id/btncancel"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btnmain"
+                android:textColor="#f46269"
+                android:textStyle="bold"
+                android:text="취소" />
+        </LinearLayout>
+
+        <DatePicker
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-20dp"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            android:scaleY="0.8" />
+
+        <EditText
+            android:text=""
+            android:id="@+id/et"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:background="#fce7f6"
+            android:gravity="center"
+            android:hint="이야기를 적어주세요~" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/share"
+                android:layout_marginRight="20dp"
+                android:buttonTint="#ff3e47"
+                android:textColor="#f46269"
+                android:textSize="7pt"
+                android:textStyle="bold"
+                android:text="공유 게시글"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/personal"
+                android:layout_marginLeft="20dp"
+                android:textColor="#f46269"
+                android:buttonTint="#ff3e47"
+                android:textSize="7pt"
+                android:textStyle="bold"
+                android:text="개인 게시글"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/everyshare"
+                android:visibility="invisible"
+                android:layout_marginRight="20dp"
+                android:buttonTint="#ff3e47"
+                android:textColor="#f46269"
+                android:textSize="7pt"
+                android:textStyle="bold"
+                android:text="전체 공유"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/coupleshare"
+                android:visibility="invisible"
+                android:layout_marginLeft="20dp"
+                android:textColor="#f46269"
+                android:buttonTint="#ff3e47"
+                android:textSize="7pt"
+                android:textStyle="bold"
+                android:text="짝꿍 공유"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#dcffcfcf"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/fillheart" />
+
+            <TextView
+                android:id="@+id/tvCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="9pt"
+                android:textStyle="bold"
+                android:text=" 등록된 이야기 : 0개" />
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btnmain"
+                android:textColor="#f46269"
+                android:onClick="onClick"
+                android:textStyle="bold"
+                android:text="일기등록" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listview"
+            android:background="#dcffcfcf"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</FrameLayout>

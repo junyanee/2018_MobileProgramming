@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sungsoyeon.couplediary.SignUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#dcffcfcf">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.4"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="60dp"
+                android:layout_marginTop="50dp"
+                android:text="♡ SIGN UP ♡"
+                android:textColor="#ff8c97"
+                android:textSize="15pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:gravity="center"
+                android:text="♥ 내 정보 ♥"
+                android:textSize="10pt"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="255dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:id="@+id/name"
+                android:hint="이름"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.4"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="55dp"
+                android:text="성별"
+                android:textSize="8pt" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/gender1"
+                android:text="남자"
+                android:textSize="8pt" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gender2"
+                android:layout_marginBottom="10dp"
+                android:text="여자"
+                android:textSize="8pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="255dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:id="@+id/id"
+                android:hint="ID"
+                android:inputType="text"
+                android:maxLength="8"/>
+
+            <EditText
+                android:layout_width="255dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:id="@+id/pw"
+                android:hint="Password"
+                android:inputType="numberPassword"
+                android:maxLength="6"/>
+
+            <EditText
+                android:layout_width="255dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:id="@+id/checkpw"
+                android:hint="Check Password"
+                android:inputType="numberPassword"
+                android:maxLength="6"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:gravity="center"
+                android:text="♥ 짝꿍 정보 ♥"
+                android:textSize="10pt"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="255dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/couplename"
+                android:hint="짝꿍 이름"
+                android:inputType="text"
+                android:layout_marginBottom="30dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="1.5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="성별"
+                android:textSize="8pt"
+                android:layout_marginRight="55dp"
+                android:layout_marginBottom="10dp"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:textSize="8pt"
+                android:id="@+id/couplegender1"
+                android:layout_marginBottom="10dp"
+                android:text="남자"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8pt"
+                android:id="@+id/couplegender2"
+                android:layout_marginBottom="10dp"
+                android:text="여자"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+            <Button
+                android:id="@+id/join"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btnmain"
+                android:textColor="#f46269"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="JOIN" />
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btnmain"
+                android:textColor="#f46269"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="CANCEL" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
